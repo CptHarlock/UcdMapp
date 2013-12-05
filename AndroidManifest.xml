@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ucdmap"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="8" />
+
+    <application
+        android:icon="@drawable/ucd"
+        android:label="@string/app_name" >
+        <activity
+            android:name="com.mapapp.main.MapAppActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="sensor" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.mapapp.mapapp.AndroidTabLayoutActivity"
+            android:label="@string/title_activity_main" >
+        </activity>
+        <activity
+            android:name="com.mapapp.mapapp.AZ"
+            android:label="@string/title_activity_az" >
+        </activity>
+        <activity
+            android:name="com.mapapp.mapapp.Academic"
+            android:label="@string/title_activity_academic" >
+        </activity>
+        <activity
+            android:name="com.mapapp.mapapp.Catering"
+            android:label="@string/title_activity_catering" >
+        </activity>
+        <activity
+            android:name="com.mapapp.mapapp.Services"
+            android:label="@string/title_activity_services" >
+        </activity>
+        <activity
+            android:name="com.mapapp.mapapp.Search"
+            android:label="@string/title_activity_search" >
+        </activity>
+        <activity
+            android:name="com.mapapp.mapapp.Links"
+            android:label="@string/title_activity_links" >
+        </activity>
+    </application>
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+</manifest>
